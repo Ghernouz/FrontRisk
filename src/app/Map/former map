@@ -1,0 +1,58 @@
+import {Component} from '@angular/core';
+
+
+
+
+
+@Component({
+    selector : 'my-map',
+    moduleId: module.id,
+    templateUrl: './map.component.html',
+    styleUrls: ['map.component.css']
+})
+
+export class MapComponent{
+    private title = " MAP ";
+     lat: number = 20.678418;
+    lng: number = 10.809007;
+    A: string = "Aaa";
+    TankUrl: string = "http://data.bloggif.com/distant/user/store/e/a/4/4/360a8e64e64c29c27497a93bfa1944ae.png";
+
+
+
+
+
+}
+
+
+
+
+
+
+<div class="row">
+    
+    
+<sebm-google-map [latitude]="lat" [longitude]="lng">
+<sebm-google-map-marker [latitude]="lat" [longitude]="lng" [iconUrl]="TankUrl" [markerDraggable]="true"></sebm-google-map-marker>
+</sebm-google-map>
+    <div>
+
+
+
+    import {NgModule } from '@angular/core';
+import {MapComponent} from './map.component';
+import { AgmCoreModule } from 'angular2-google-maps/core'
+import {CommonModule} from '@angular/common'
+@NgModule({
+    imports : [ 
+        CommonModule,
+        AgmCoreModule.forRoot({
+        apiKey: 'AIzaSyDgfJOKpy9MJKcr5xaVmZC4ZqbBCq83vuc'
+        }),
+    ],
+    declarations: [ MapComponent ],
+    providers: []
+})
+
+export class MapModule{
+
