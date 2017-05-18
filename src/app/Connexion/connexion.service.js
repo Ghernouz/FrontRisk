@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var http_1 = require('@angular/http');
-require('rxjs/add/operator/toPromise');
+var http_1 = require("@angular/http");
+require("rxjs/add/operator/toPromise");
 var ConnexionService = (function () {
     function ConnexionService(http) {
         this.http = http;
@@ -24,11 +25,11 @@ var ConnexionService = (function () {
             return (Promise.resolve(false));
         }
     };
-    ConnexionService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], ConnexionService);
     return ConnexionService;
 }());
+ConnexionService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], ConnexionService);
 exports.ConnexionService = ConnexionService;
 //# sourceMappingURL=connexion.service.js.map

@@ -7,22 +7,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var jeu_component_1 = require("./jeu.component");
 var common_1 = require("@angular/common");
+var map_component_1 = require("../Map/map.component");
+var map_module_1 = require("../Map/map.module");
 var forms_1 = require("@angular/forms");
-var MapModule = (function () {
-    function MapModule() {
+var Jeu = (function () {
+    function Jeu() {
     }
-    return MapModule;
+    return Jeu;
 }());
-MapModule = __decorate([
+Jeu = __decorate([
     core_1.NgModule({
         imports: [
             common_1.CommonModule,
+            map_module_1.MapModule,
             forms_1.FormsModule
         ],
-        declarations: [],
-        providers: []
+        declarations: [jeu_component_1.JeuComponent, map_component_1.MapComponent],
     })
-], MapModule);
-exports.MapModule = MapModule;
-//# sourceMappingURL=map.module.js.map
+], Jeu);
+exports.Jeu = Jeu;
+//# sourceMappingURL=jeu.module.js.map

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-//import { NgForm } from "@angular/forms";
 import { ConnexionService} from "./connexion.service";
 import { RouterModule } from '@angular/router';
 import {Router} from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 @Component({
     moduleId: module.id,
@@ -19,7 +19,7 @@ import {Router} from '@angular/router';
 export class ConnectForm {
     private title = "Risk-IO";
     constructor(private ConnexionService: ConnexionService,private router: Router){}
-    private a=3;
+
     private RedirectorBool: Boolean;
 
 

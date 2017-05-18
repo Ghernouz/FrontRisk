@@ -7,22 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var common_1 = require("@angular/common");
-var forms_1 = require("@angular/forms");
-var MapModule = (function () {
-    function MapModule() {
+var MenuComponent = (function () {
+    function MenuComponent() {
     }
-    return MapModule;
+    return MenuComponent;
 }());
-MapModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            common_1.CommonModule,
-            forms_1.FormsModule
-        ],
-        declarations: [],
-        providers: []
+MenuComponent = __decorate([
+    core_1.Component({
+        selector: 'my-menu',
+        moduleId: module.id,
+        templateUrl: './menu.component.html',
+        styleUrls: ['./menu.component.css']
     })
-], MapModule);
-exports.MapModule = MapModule;
-//# sourceMappingURL=map.module.js.map
+], MenuComponent);
+exports.MenuComponent = MenuComponent;
+//# sourceMappingURL=menu.component.js.map

@@ -8,16 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-//import { NgForm } from "@angular/forms";
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
 var connexion_service_1 = require("./connexion.service");
-var router_1 = require('@angular/router');
+var router_1 = require("@angular/router");
 var ConnectForm = (function () {
     function ConnectForm(ConnexionService, router) {
         this.ConnexionService = ConnexionService;
         this.router = router;
         this.title = "Risk-IO";
-        this.a = 3;
     }
     ConnectForm.prototype.checkpass = function (form) {
         console.log(form.value);
@@ -37,17 +36,17 @@ var ConnectForm = (function () {
         return 0;
     };
     ;
-    ConnectForm = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'my-connect-form',
-            templateUrl: './connexion.component.html',
-            styleUrls: ['./connexion.component.css'],
-            providers: [connexion_service_1.ConnexionService]
-        }), 
-        __metadata('design:paramtypes', [connexion_service_1.ConnexionService, router_1.Router])
-    ], ConnectForm);
     return ConnectForm;
 }());
+ConnectForm = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'my-connect-form',
+        templateUrl: './connexion.component.html',
+        styleUrls: ['./connexion.component.css'],
+        providers: [connexion_service_1.ConnexionService]
+    }),
+    __metadata("design:paramtypes", [connexion_service_1.ConnexionService, router_1.Router])
+], ConnectForm);
 exports.ConnectForm = ConnectForm;
 //# sourceMappingURL=connexion.component.js.map
